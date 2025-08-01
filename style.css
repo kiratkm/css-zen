@@ -1,0 +1,153 @@
+/* Adds a Gradient and Font + transition*/
+body {
+  background: linear-gradient(to bottom right, #ffe4e1, #fff5e1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Header with a bg Image and some font colors*/
+header {
+  background-color: #ffb6b9;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  border-bottom: 6px solid #ffdac1;
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Added a hover effect to the heading and shadows*/
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px #ff6f61;
+  transition: transform 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #fff8dc;
+}
+
+/* adding some decoration to the section titles */
+h3 {
+  color: #ff6f61;
+  background-color: #fff0d6;
+  padding: 0.5rem;
+  border-left: 5px solid #fcd5ce;
+  transition: background-color 0.3s;
+}
+
+h3:hover {
+  background-color: #ffe6cc;
+}
+
+h3::before {
+  content: "☀️ ";
+  margin-right: 5px;
+}
+
+/* Added */
+.intro, .main {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Simple Fade In Animation on Load */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Link Styling with Fun Color Transitions */
+a {
+  color: #ffa07a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+/* Sidebar with Image and Border */
+.sidebar {
+  background-color: #fff0f5;
+  border-top: 5px solid #fbc4ab;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-image: url('https://images.unsplash.com/photo-1491553895911-0055eca6402d');
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.sidebar h3 {
+  color: #f08080;
+}
+
+.sidebar a {
+  color: #ff69b4;
+}
+
+.sidebar a:hover {
+  color: #d63384;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe4b5;
+  border-top: 4px solid #ffb347;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #ff8c00;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff4500;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+p:hover {
+  color: #444;
+}
+
+/* Responsive Font Scaling for Mobile */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
